@@ -6,7 +6,7 @@ async function bootstrap() {
 
   app.enableCors(); // allow frontend requests
 
-  await app.listen(8000);
-  console.log('Server running on http://localhost:8000');
+  await app.listen(4000);
+  console.log('Server running on http://localhost:4000');
 }
 bootstrap();

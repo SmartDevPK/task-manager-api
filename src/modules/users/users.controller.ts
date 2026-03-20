@@ -2,10 +2,13 @@
 import { Controller, Get, Post, Patch, Delete, Body, Param } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { User } from './entities/user.entity';
+import { join } from 'path';
 
 @Controller('users') // Plural is better for REST conventions
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
+
+  
 
   // -----------------------------
   // CREATE
