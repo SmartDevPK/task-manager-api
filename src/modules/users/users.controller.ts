@@ -13,7 +13,7 @@ export class UsersController {
   // -----------------------------
   // CREATE
   // -----------------------------
-  @Post()
+  @()
   async createUser(
     @Body('name') name: string,
     @Body('email') email: string,
